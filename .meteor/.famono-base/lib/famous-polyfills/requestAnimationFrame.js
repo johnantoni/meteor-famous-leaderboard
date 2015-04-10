@@ -1,4 +1,5 @@
-define('famous-polyfills/requestAnimationFrame', [], function(require, exports, module) {
+Famono.scope('famous-polyfills/requestAnimationFrame', [], function(require, define, exports, module) {
+define(function(require, exports, module) {
 // adds requestAnimationFrame functionality
 // Source: http://strd6.com/2011/05/better-window-requestanimationframe-shim/
 
@@ -13,4 +14,5 @@ window.requestAnimationFrame || (window.requestAnimationFrame =
   }, 1000 / 60);
 });
 
+});
 });
